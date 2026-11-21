@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вавилон — Салон красоты в центре Ульяновска</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Вавилон</a>
+        <nav>
+            <a href="#services">Услуги и цены</a>
+            <a href="#about">О салоне</a>
+            <a href="#booking">Запись</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+        <div class="header-contact">
+            <a href="tel:+78422707691">+7 (8422) 70-76-91</a>
+            <span>Ульяновск, ул. Гончарова, 56</span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="section-subtitle">Эстетика и уход в центре Ульяновска</span>
+            <h1>Искусство создавать ваш совершенный образ</h1>
+            <p>Персональный подход, авторские техники окрашивания, ногтевой сервис и косметология в атмосфере спокойствия и заботы о каждой детали.</p>
+            <div class="btn-group">
+                <a href="#booking" class="btn-primary">Записаться онлайн</a>
+                <a href="#services" class="btn-outline">Смотреть прайс</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="hero.jpg" alt="Интерьер и атмосфера салона красоты Вавилон">
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="section-header">
+            <span class="section-subtitle">Меню красоты</span>
+            <h2>Услуги и стоимость</h2>
+            <p>Мы работаем на сертифицированной профессиональной косметике и подбираем уход индивидуально под ваш тип волос и кожи.</p>
+        </div>
+
+        <div class="tabs-nav">
+            <button class="tab-btn active" onclick="openTab(event, 'hair')">Парикмахерский зал</button>
+            <button class="tab-btn" onclick="openTab(event, 'nails')">Ногтевой сервис</button>
+            <button class="tab-btn" onclick="openTab(event, 'face')">Косметология и брови</button>
+        </div>
+
+        <div id="hair" class="tab-content active">
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Женская стрижка и укладка</h3>
+                    <p>Консультация стилиста, мытьё головы с массажем, стрижка и укладка по форме</p>
+                </div>
+                <div class="service-price">от 1 500 ₽</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Сложное окрашивание (AirTouch / Шатуш)</h3>
+                    <p>Плавные переходы цвета, защита структуры волос и тонирование</p>
+                </div>
+                <div class="service-price">от 5 500 ₽</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Окрашивание в один тон</h3>
+                    <p>Стойкий насыщенный оттенок с ухаживающим комплексом</p>
+                </div>
+                <div class="service-price">от 3 200 ₽</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Вечерняя или коктейльная укладка</h3>
+                    <p>Локоны, объём или собранная причёска для особого случая</p>
+                </div>
+                <div class="service-price">от 2 000 ₽</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Глубокое восстановление волос</h3>
+                    <p>Молекулярное увлажнение и питание для блеска и эластичности</p>
+                </div>
+                <div class="service-price">от 2 500 ₽</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Мужская модельная стрижка</h3>
+                    <p>Мытьё головы, стрижка и стайлинг</p>
+                </div>
+                <div class="service-price">от 1 100 ₽</div>
+            </div>
+        </div>
+
+        <div id="nails" class="tab-content">
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Маникюр с покрытием гель-лак</h3>
+                    <p>Комбинированный или аппаратный маникюр, выравнивание базой, цвет</p>
+                </div>
+                <div class="service-price">от 1 800 ₽</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Классический маникюр без покрытия</h3>
+                    <p>Бережная обработка кутикулы, придание формы и уход маслом</p>
+                </div>
+                <div class="service-price">1 000 ₽</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Смарт-педикюр с покрытием</h3>
+                    <p>Обработка стоп дисками, аккуратный маникюр пальчиков и гель-лак</p>
+                </div>
+                <div class="service-price">от 2 400 ₽</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Японский эко-маникюр</h3>
+                    <p>Укрепление и глянцевый блеск натуральной ногтевой пластины пастами</p>
+                </div>
+                <div class="service-price">1 600 ₽</div>
+            </div>
+        </div>
+
+        <div id="face" class="tab-content">
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Архитектура и окрашивание бровей</h3>
+                    <p>Подбор идеальной формы, коррекция воском/пинцетом, краска или хна</p>
+                </div>
+                <div class="service-price">1 200 ₽</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Ламинирование ресниц + ботокс</h3>
+                    <p>Естественный изгиб, визуальное удлинение и глубокое питание</p>
+                </div>
+                <div class="service-price">1 900 ₽</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Комбинированная чистка лица</h3>
+                    <p>Деликатное очищение пор, успокаивающая маска и подбор домашнего ухода</p>
+                </div>
+                <div class="service-price">2 800 ₽</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Скульптурно-буккальный массаж лица</h3>
+                    <p>Лифтинг-эффект, снятие мышечных зажимов и улучшение тона кожи</p>
+                </div>
+                <div class="service-price">2 500 ₽</div>
+            </div>
+        </div>
+
+        <div class="services-footer">
+            <a href="#booking" class="btn-primary">Записаться на процедуру</a>
+        </div>
+    </section>
+    
+    <!-- Блок 3: О салоне -->
+    <section id="about" class="about-section">
+        <div class="section-header">
+            <span class="section-subtitle">Философия Вавилон</span>
+            <h2>Пространство эстетики и комфорта</h2>
+            <p>Мы создали место в самом сердце Ульяновска, где можно замедлиться, выпить чашку свежесваренного кофе и доверить свой образ профессионалам.</p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-card">
+                <span class="about-number">01</span>
+                <h3>Мастера с опытом от 7 лет</h3>
+                <p>Наши стилисты и косметологи регулярно проходят повышение квалификации и владеют современными техниками бережного окрашивания и ухода.</p>
+            </div>
+            <div class="about-card">
+                <span class="about-number">02</span>
+                <h3>Премиальные составы</h3>
+                <p>Используем проверенную европейскую и японскую косметику, а все инструменты проходят многоступенчатую медицинскую стерилизацию.</p>
+            </div>
+            <div class="about-card">
+                <span class="about-number">03</span>
+                <h3>Удобное расположение</h3>
+                <p>Находимся на центральной улице Гончарова, 56. Легко добраться из любой точки города, рядом предусмотрена удобная парковка для гостей.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 4: Онлайн-запись -->
+    <section id="booking" class="booking-section">
+        <div class="booking-container">
+            <div class="section-header" style="margin-bottom: 36px;">
+                <span class="section-subtitle">Забронировать визит</span>
+                <h2>Онлайн-запись</h2>
+                <p>Оставьте контакты, и администратор свяжется с вами в течение 10 минут для подтверждения удобного времени.</p>
+            </div>
+
+            <form id="bookingForm" class="booking-form" onsubmit="handleBooking(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="clientName">Ваше имя</label>
+                        <input type="text" id="clientName" placeholder="Например, Анна" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="clientPhone">Телефон</label>
+                        <input type="tel" id="clientPhone" placeholder="+7 (900) 000-00-00" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="serviceSelect">Направление</label>
+                        <select id="serviceSelect" required>
+                            <option value="Парикмахерский зал">Парикмахерский зал</option>
+                            <option value="Ногтевой сервис">Ногтевой сервис</option>
+                            <option value="Косметология и брови">Косметология и брови</option>
+                            <option value="Комплексный визит">Комплексный визит</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="visitDate">Желаемая дата</label>
+                        <input type="date" id="visitDate" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary booking-submit">Записаться в салон</button>
+            </form>
+
+            <div id="bookingSuccess" class="booking-success">
+                <h3>Заявка принята!</h3>
+                <p id="successText">Спасибо! Администратор салона «Вавилон» скоро позвонит вам.</p>
+                <button type="button" class="btn-outline" onclick="resetBooking()">Записаться ещё раз</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 5: Контакты и карта -->
+    <footer id="contacts">
+        <div class="footer-grid">
+            <div class="footer-info">
+                <a href="#" class="logo">Вавилон</a>
+                <div class="contact-list">
+                    <div class="contact-item">
+                        <span>Адрес салона</span>
+                        <p>г. Ульяновск, ул. Гончарова, 56</p>
+                    </div>
+                    <div class="contact-item">
+                        <span>Телефон для записи</span>
+                        <a href="tel:+78422707691">+7 (8422) 70-76-91</a>
+                    </div>
+                    <div class="contact-item">
+                        <span>Режим работы</span>
+                        <p>Ежедневно с 09:00 до 21:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="position:relative;overflow:hidden;"><a href="https://yandex.com/web-maps/org/vavilon/80584954905/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Вавилон</a><a href="https://yandex.com/web-maps/195/ulyanovsk/category/hairdresser/184105812/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Парикмахерская в Ульяновске</a><a href="https://yandex.com/web-maps/195/ulyanovsk/category/nail_salon/20476284572/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Ногтевая студия в Ульяновске</a><iframe src="https://yandex.com/map-widget/v1/?l=sat%2Cskl&ll=48.401506%2C54.321129&mode=poi&poi%5Bpoint%5D=48.401586%2C54.321126&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D80584954905&z=19.88" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Салон красоты «Вавилон» — Ульяновск. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        function openTab(evt, tabId) {
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(item => item.classList.remove('active'));
+
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            document.getElementById(tabId).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+
+        function handleBooking(event) {
+            event.preventDefault();
+            const name = document.getElementById('clientName').value;
+            const service = document.getElementById('serviceSelect').value;
+            const date = document.getElementById('visitDate').value;
+
+            document.getElementById('successText').innerText =
+                `${name}, ваша заявка на «${service}» (${date}) принята. Администратор салона «Вавилон» свяжется с вами в ближайшее время.`;
+
+            document.getElementById('bookingForm').style.display = 'none';
+            document.getElementById('bookingSuccess').style.display = 'block';
+        }
+
+        function resetBooking() {
+            document.getElementById('bookingForm').reset();
+            document.getElementById('bookingForm').style.display = 'flex';
+            document.getElementById('bookingSuccess').style.display = 'none';
+        }
+
+        function openTab(evt, tabId) {
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(item => item.classList.remove('active'));
+
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            document.getElementById(tabId).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
